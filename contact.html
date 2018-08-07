@@ -1,0 +1,302 @@
+﻿<!--
+Copyright (c) 20015-2017 jerry chia| rt2015jiazh@163.com
+@design jerry chia
+@coding jerry chia
+-->
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <!-- BASICS -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>萝卜特甜-国内领先的VR+地产解决方案服务商</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- skin -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/searchinfowindow_min.css"/>
+    <link rel="shortcut icon" href="img/logo.png">
+    <style>
+        .cd-vertical-nav li:first-of-type a::after {
+            /* change icon using image sprites */
+            /*background-position: 0px -48px;*/
+            content: "\f015";
+            color: black;
+            font-size: 16px;
+            top: 4px;
+            font-family: FontAwesome;
+            /* fix bug with transitions - set scale(0.01) rather than scale(0) */
+            -webkit-transform: translateX(-50%) translateY(4.5em) scale(0.01);
+            -moz-transform: translateX(-50%) translateY(4.5em) scale(0.01);
+            -ms-transform: translateX(-50%) translateY(4.5em) scale(0.01);
+            -o-transform: translateX(-50%) translateY(4.5em) scale(0.01);
+            transform: translateX(-50%) translateY(4.5em) scale(0.01);
+        }
+
+        .cd-vertical-nav li:nth-of-type(2) a::after {
+            /*background-position: 0px -32px;*/
+            content: "\f095";
+            color: black;
+            font-size: 16px;
+            top: 4px;
+            font-family: FontAwesome;
+            -webkit-transform: translateX(-50%) translateY(1.5em) scale(0.01);
+            -moz-transform: translateX(-50%) translateY(1.5em) scale(0.01);
+            -ms-transform: translateX(-50%) translateY(1.5em) scale(0.01);
+            -o-transform: translateX(-50%) translateY(1.5em) scale(0.01);
+            transform: translateX(-50%) translateY(1.5em) scale(0.01);
+        }
+
+        .cd-vertical-nav li:nth-of-type(3) a::after {
+            /*background-position: 0px -16px;*/
+            content: "\f0c0";
+            color: black;
+            font-size: 16px;
+            top: 4px;
+            font-family: FontAwesome;
+            -webkit-transform: translateX(-50%) translateY(-1.5em) scale(0.01);
+            -moz-transform: translateX(-50%) translateY(-1.5em) scale(0.01);
+            -ms-transform: translateX(-50%) translateY(-1.5em) scale(0.01);
+            -o-transform: translateX(-50%) translateY(-1.5em) scale(0.01);
+            transform: translateX(-50%) translateY(-1.5em) scale(0.01);
+        }
+
+        .cd-vertical-nav li:nth-of-type(4) a::after {
+            /*background-position: 0px 0px;*/
+            content: "\f278";
+            color: black;
+            font-size: 16px;
+            top: 4px;
+            font-family: FontAwesome;
+            -webkit-transform: translateX(-50%) translateY(-4.5em) scale(0.01);
+            -moz-transform: translateX(-50%) translateY(-4.5em) scale(0.01);
+            -ms-transform: translateX(-50%) translateY(-4.5em) scale(0.01);
+            -o-transform: translateX(-50%) translateY(-4.5em) scale(0.01);
+            transform: translateX(-50%) translateY(-4.5em) scale(0.01);
+        }
+    </style>
+</head>
+<body>
+<div id='wx_pic' style='margin:0 auto;display:none;'>
+    <img src='img/weixin.png'/>
+</div>
+<nav class="cd-vertical-nav">
+    <ul>
+        <li><a href="#section-cantacthome" class="active smooth"><span class="label">首页</span></a></li>
+        <li><a href="#section-contact" class="smooth"><span class="label">联系我们</span></a></li>
+        <li><a href="#section-join" class="smooth"><span class="label">加入我们</span></a></li>
+    </ul>
+</nav>
+<div class="navbar navbar-fixed-top" role="navigation"
+     data-0="line-height:100px; height:100px; background-color:rgba(0,0,0,0);"
+     data-300="line-height:60px; height:60px; background-color:rgba(0,0,0,1);">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="fa fa-bars color-white"></span>
+            </button>
+            <h1><a class="navbar-brand" href="index.html" data-0="line-height:90px;"
+                   data-300="line-height:50px;"><img src="img/lbttlogo.png" alt="萝卜特甜" style="display: inline">&nbsp;&nbsp;&nbsp;萝卜特甜</a></h1>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav" data-0="margin-top:20px;" data-300="margin-top:5px;">
+                <li><a class="smooth" href="index.html">特甜VR</a></li>
+                <li><a class="smooth" href="qsjqj.html">全视界全景</a></li>
+                <li><a class="smooth" href="about.html">关于我们</a></li>
+                <li class="active"><a class="smooth" href="#">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<section id="section-cantacthome" class="appear cantacthome" data-stellar-background-ratio="0">
+    <div class="container-fluid">
+        <div class="row home-top">
+            <div class="col-md-12">
+                <img src="img/t5.png"
+                     class="animation103 center-block animated fadeInUp img-responsive">
+            </div>
+        </div>
+    </div>
+    <div id="mice">
+        <a href="#section-contact" class="smooth">
+            <div>
+                <span class="unu"></span>
+                <span class="doi"></span>
+            </div>
+        </a>
+    </div>
+</section>
+<section id="section-contact" class="appear section clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 align-center">
+                <p class="section-header notransition animated fadeInDownNow animation103">联系我们</p>
+                <p class="section-subheader notransition animated fadeInUpNow animation103">留言后我们会尽快联系您</p>
+            </div>
+        </div>
+        <div class="row notransition animated fadeInUpNow animation103">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="cform" id="contact-form">
+                    <form action="contact/contact.php" method="post" role="form" class="contactForm">
+                        <div class="form-group">
+                            <label for="name">姓名</label>
+                            <input type="text" name="name" class="form-control" id="name" placeholder="姓名"
+                                   data-rule="required" data-msg="请填写姓氏"/>
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">邮箱</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="邮箱地址"
+                                   data-rule="email" data-msg="邮箱无效"/>
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">联系电话</label>
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="手机或者固话"
+                                   data-rule="required" data-msg="请输入电话号码"/>
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">留言</label>
+                            <textarea id="message" class="form-control" name="message" rows="5"></textarea>
+                            <div class="validation"></div>
+                        </div>
+                        <button type="submit" class="btn btn-theme pull-left" id="sendbtn">留言</button>
+                    </form>
+                    <div id="sendmessage">
+                        我们已经接收到你的留言，会尽快联系您. 谢谢!
+                    </div>
+                </div>
+            </div>
+            <!-- ./span12 -->
+        </div>
+    </div>
+</section>
+<!-- case -->
+<section id="section-join" class="appear section" data-stellar-background-ratio="0.4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 pad-top40 pad-bot40">
+                <img src="img/t2.png"
+                     class="img-responsive center-block notransition animated fadeInUpNow animation103">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- contact -->
+<section class="section clearfix">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 align-center notransition animated fadeInDownNow animation58">
+                <p class="section-header">加入我们</p>
+                <p class="section-subheader">技术驱动创新，服务引领行业</p>
+            </div>
+        </div>
+        <div class="row pad-bot40 pad-top40 offer">
+            <div class="col-md-2 col-md-offset-1 animated notransition animated fadeInLeftNow animation203">
+                <img src="img/jianmo.jpg" class="auto img-responsive center-block">
+            </div>
+            <div class="col-md-3 align-left animated notransition animated fadeInRightNow animation203">
+                <h3>游戏建模师</h3>
+                <h4>岗位职责：</h4>
+                <ul>
+                    <li>配合策划、原画师制定游戏角色和物品风格；</li>
+                    <li>根据原画师绘制的原画制作3D角色模型；</li>
+                    <li>配合动画师对制作好的模型进行优化调整。</li>
+                </ul>
+                <h4>任职要求：</h4>
+                <ul>
+                    <li>美术相关专业毕业，具有扎实的美术造型功底；</li>
+                    <li>具有3年以上游戏建模相关工作经验；</li>
+                    <li>热爱设计，有良好的审美品味、设计力和表现力，具备良好的产品质量把控能力；</li>
+                    <li>有团队合作精神，能够承受较强的工作压力；</li>
+                    <li>熟练使用3DMAX/MAYA等3D建模软件有UE4开发经验优先；</li>
+                    <li>对虚拟现实感兴趣的优先。</li>
+                </ul>
+            </div>
+            <div class="col-md-2 animated notransition animated fadeInLeftNow animation203">
+                <img src="img/vrsoft.jpg" class="auto img-responsive center-block" alt="">
+            </div>
+            <div class="col-md-3 align-left animated notransition animated fadeInRightNow animation203">
+                <h3>VR软件工程师</h3>
+                <h4>岗位职责：</h4>
+                <ul>
+                    <li>实现虚拟现实系统的逻辑及优化；</li>
+                    <li>使用UE4和C++进行开发；</li>
+                    <li>根据需求进行开发工具的设计、实现及版本更新、BUG维护等。</li>
+                </ul>
+                <h4>任职要求：</h4>
+                <ul>
+                    <li>计算机相关专业学历；</li>
+                    <li>对VR有强烈的兴趣，有意愿进行深入研究和学习；</li>
+                    <li>有自主学习的能力、性格开朗，良好的沟通能力；</li>
+                    <li>有良好的C++语言基础；</li>
+                    <li>具备良好积极态度对待项目及工作内容；</li>
+                    <li>有良好的面向对象开发意识，良好的代码设计能力及代码习惯；</li>
+                    <li>有3D游戏开发经验者优先，有良好英语沟通能力的优先。</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="footer" class="section  footer ">
+    <div class="container pad-bot40">
+        <div class="row mar-bot20">
+            <div class="col-sm-12 align-center">
+                <ul class="social-network social-circle">
+                    <li><a href="https://shop129979655.taobao.com/" target="_blank" class="icotaobao" title="淘宝商城"
+                           data-toggle="tooltip" data-placement="bottom">
+                        <div style="line-height: 50px"><img src="img/taobao.png"></div>
+                    </a></li>
+                    <li><a tabindex="0" class="icoweixin" role="button" data-toggle="popover" data-trigger="hover"
+                           data-html="true" data-placement="bottom" data-content="<img src='img/qrlbtt.jpg'>"><i
+                            class="fa fa-weixin"></i></a></li>
+                    <li><a href="#" class="icovr" title="HTML5" data-toggle="tooltip" data-placement="bottom"><i
+                            class="fa fa-html5"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row align-center copyright">
+            <div class="col-sm-12">
+                <p>&copy;&nbsp;2016 南京萝卜特甜信息科技有限公司</p>
+                <p>
+                    <small><i class="fa fa-building-o"></i>&nbsp;&nbsp;南京市建邺区江东中路98号河西万达广场F座812室</small>
+                </p>
+                <h4><strong><a href="tel:025-66911667" target="_blank" style="letter-spacing: 6px;"><i class="fa fa-phone"></i>&nbsp;025-66911667</a></strong></h4>
+                <p>
+                    <small><a href="http://www.miitbeian.gov.cn/" target="_blank" class="color-footer"><i class="fa fa-shield"></i>&nbsp;&nbsp;苏ICP备15041839号</a></small>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/skrollr.min.js"></script>
+<script src="js/stellar.js"></script>
+<script src="js/jquery.appear.js"></script>
+<script src="js/validate.js"></script>
+<script src="js/jweixin-1.0.0.js"></script>
+<script src="js/main.js"></script>
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?b97983f375a0aaf713b0ec5ca6cc97d0";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+</body>
+</html>

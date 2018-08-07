@@ -1,0 +1,877 @@
+﻿<!--
+Copyright (c) 20015-2017 jerry chia| rt2015jiazh@163.com
+@design jerry chia
+@coding jerry chia
+-->
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <!-- BASICS -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>萝卜特甜-国内领先的VR+地产解决方案服务商</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <!-- skin -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="shortcut icon" href="img/logo.png">
+    <style>
+        .cd-vertical-nav li:first-of-type a::after {
+            /* change icon using image sprites */
+            /*background-position: 0px -48px;*/
+            content: "\f015";
+            color: black;
+            font-size: 16px;
+            top: 4px;
+            font-family: FontAwesome;
+            /* fix bug with transitions - set scale(0.01) rather than scale(0) */
+            -webkit-transform: translateX(-50%) translateY(4.5em) scale(0.01);
+            -moz-transform: translateX(-50%) translateY(4.5em) scale(0.01);
+            -ms-transform: translateX(-50%) translateY(4.5em) scale(0.01);
+            -o-transform: translateX(-50%) translateY(4.5em) scale(0.01);
+            transform: translateX(-50%) translateY(4.5em) scale(0.01);
+        }
+
+        .cd-vertical-nav li:nth-of-type(2) a::after {
+            /*background-position: 0px -32px;*/
+            content: "\f25c";
+            color: black;
+            font-size: 16px;
+            top: 4px;
+            font-family: FontAwesome;
+            -webkit-transform: translateX(-50%) translateY(1.5em) scale(0.01);
+            -moz-transform: translateX(-50%) translateY(1.5em) scale(0.01);
+            -ms-transform: translateX(-50%) translateY(1.5em) scale(0.01);
+            -o-transform: translateX(-50%) translateY(1.5em) scale(0.01);
+            transform: translateX(-50%) translateY(1.5em) scale(0.01);
+        }
+
+        .cd-vertical-nav li:nth-of-type(3) a::after {
+            /*background-position: 0px -16px;*/
+            content: "\f1ea";
+            color: black;
+            font-size: 16px;
+            top: 4px;
+            font-family: FontAwesome;
+            -webkit-transform: translateX(-50%) translateY(-1.5em) scale(0.01);
+            -moz-transform: translateX(-50%) translateY(-1.5em) scale(0.01);
+            -ms-transform: translateX(-50%) translateY(-1.5em) scale(0.01);
+            -o-transform: translateX(-50%) translateY(-1.5em) scale(0.01);
+            transform: translateX(-50%) translateY(-1.5em) scale(0.01);
+        }
+
+        .cd-vertical-nav li:nth-of-type(4) a::after {
+            /*background-position: 0px 0px;*/
+            content: "\f0c0";
+            color: black;
+            font-size: 16px;
+            top: 4px;
+            font-family: FontAwesome;
+            -webkit-transform: translateX(-50%) translateY(-4.5em) scale(0.01);
+            -moz-transform: translateX(-50%) translateY(-4.5em) scale(0.01);
+            -ms-transform: translateX(-50%) translateY(-4.5em) scale(0.01);
+            -o-transform: translateX(-50%) translateY(-4.5em) scale(0.01);
+            transform: translateX(-50%) translateY(-4.5em) scale(0.01);
+        }
+
+    </style>
+</head>
+<body>
+<div id='wx_pic' style='margin:0 auto;display:none;'>
+    <img src='img/weixin.png'/>
+</div>
+<nav class="cd-vertical-nav">
+    <ul>
+        <li><a href="#section-home" class="active smooth"><span class="label">首页</span></a></li>
+        <li><a href="#section-introduction" class="smooth"><span class="label">公司介绍</span></a></li>
+        <li><a href="#section-news" class="smooth"><span class="label">最新动态</span></a></li>
+        <li><a href="#section-paterner" class="smooth"><span class="label">合作伙伴</span></a></li>
+    </ul>
+</nav>
+<div class="navbar navbar-fixed-top" role="navigation"
+     data-0="line-height:100px; height:100px; background-color:rgba(0,0,0,0);"
+     data-300="line-height:60px; height:60px; background-color:rgba(0,0,0,1);">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="fa fa-bars color-white"></span>
+            </button>
+            <h1><a class="navbar-brand" href="index.html" data-0="line-height:90px;"
+                   data-300="line-height:50px;"><img src="img/lbttlogo.png" alt="萝卜特甜" style="display: inline">&nbsp;&nbsp;&nbsp;萝卜特甜</a></h1>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav" data-0="margin-top:20px;" data-300="margin-top:5px;">
+                <li><a class="smooth" href="index.html">特甜VR</a></li>
+                <li><a class="smooth" href="qsjqj.html">全视界全景</a></li>
+                <li class="active"><a class="smooth" href="about.html">关于我们</a></li>
+                <li><a class="smooth" href="contact.html">联系我们</a></li>
+            </ul>
+        </div>
+        <!--/.navbar-collapse -->
+    </div>
+</div>
+<!-- advantage -->
+<section id="section-home" class="appear abouthome">
+    <canvas id="canvas" class="aboutcanvas" style="position: absolute;top: 0;width: 100%;overflow: hidden"></canvas>
+    <div class="container-fluid">
+        <div class="row home-top">
+            <div class="col-md-12">
+                <img src="img/abouttitle.png" class="animation103 center-block animated fadeInUp img-responsive">
+            </div>
+        </div>
+    </div>
+    <div id="mice">
+        <a href="#section-introduction" class="smooth">
+            <div>
+                <span class="unu"></span>
+                <span class="doi"></span>
+            </div>
+        </a>
+    </div>
+</section>
+<section id="section-introduction" class="appear section clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 align-center">
+                <p class="section-header notransition animated fadeInDownNow animation103">萝卜特甜</p>
+            </div>
+        </div>
+        <div class="row mar-bot40 mar-top30">
+            <div class="col-md-12 maintext notransition animated fadeInUpNow animation103">
+                <p>
+                    南京萝卜特甜信息科技有限公司成立于2015年，是国内较早从事VR+地产解决方案技术研发与应用服务的技术型企业。立志于以科技创新服务，为全球客户提供卓越品质的技术支持。公司成立两年来，围绕商业地产、住宅地产、旅游地产等地产细分领域不断地进行需求挖掘与痛点分析，最终形成了一套完善、系统的VR技术解决方案并达到业内领先的技术水平和服务标准。
+                    公司旗下目前涵盖两个品牌事业部：</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 align-center notransition animated fadeInDownNow animation53">
+                <p class="section-subheader">我们的理念</p>
+            </div>
+        </div>
+        <div class="row mar-bot40 mar-top40">
+            <div class="col-md-4 col-xs-4 align-center notransition animated fadeInDownNow animation53">
+                <i class="fa fa-circle-o fa-3x mar-bot20"></i>
+                <h4 class="text-bold">简洁</h4>
+                <p>大道至简
+                </p>
+            </div>
+            <div class="col-md-4 col-xs-4 align-center notransition animated fadeInDownNow animation56">
+                <i class="fa fa-line-chart fa-3x mar-bot20"></i>
+                <h4 class="text-bold">高效</h4>
+                <p>倍道兼行
+                </p>
+            </div>
+            <div class="col-md-4 col-xs-4 align-center notransition animated fadeInDownNow animation59">
+                <i class="fa fa-cogs fa-3x mar-bot20"></i>
+                <h4 class="text-bold">稳定</h4>
+                <p>周道如砥
+                </p>
+            </div>
+            <div class="col-md-12 maintext notransition animated fadeInUpNow animation103">
+                <p>
+                    <strong>特甜VR</strong>
+                    为客户提供从虚拟场景设计、3D建模、VR场景构建，再到产品的最终部署、操作培训等一整套技术支持与行业应用服务。针对于行业内合伙伙伴，提供深层次的技术交流与培训服务，实现技术共享，推动带动整个产业链的发展。
+                </p>
+                <p>
+                    <strong>全视界全景</strong>
+                    运用专业的全景拍摄与后期技术，配合无人机、单反云台、手持快速成像等先进设备，720度还原各类真实场景，提供全景内容全平台分发的线上共享服务。业务范围包括：720全景照片与全景视频的制作，720全景直播技术支持。
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- case -->
+<section id="section-news" class="section appear" data-stellar-background-ratio="0.4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 pad-top40 pad-bot40">
+                <img src="img/t1.png"
+                     class="img-responsive center-block notransition animated fadeInUpNow animation103">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section" style="background-color: #e9f0f5;">
+    <div class="container-fluid">
+        <div class="row mar-bot40">
+            <div class="col-md-12 align-center">
+                <p class="section-header  notransition animated fadeInDownNow animation103">最新动态</p>
+                <p class="section-subheader notransition animated fadeInUpNow animation103">脚踏实地 跬步千里</p>
+            </div>
+        </div>
+        <div id="cd-timeline" class="cd-container">
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-location">
+                    
+                </div> <!-- cd-timeline-img -->
+                <div class="cd-timeline-content maintext">
+                    <h3>第四届江苏国际绿色建筑展览会</h3>
+                    <p>萝卜特甜参加了在南京国际博览中心举行的第四届江苏国际绿色建筑展览会，全面展示了旗下子品牌——特甜VR的虚拟样板间产品，吸引了大批参观者的目光......</p>
+                    <a href="#portfolioModal7" class="cd-read-more" data-toggle="modal">查看更多</a>
+                    <span class="cd-date">2016-11-03</span>
+                </div> <!-- cd-timeline-content -->
+            </div> <!-- cd-timeline-block -->
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture">
+                    
+                </div> <!-- cd-timeline-img -->
+                <div class="cd-timeline-content maintext">
+                    <h3>2016南京马拉松</h3>
+                    <p>时隔一年，萝卜特甜再次受邀助力2016南京马拉松，为本次赛事带来了全新的设备，赛前发布了领取比赛物品的全景指南，为运动员提供了方便的导航......</p>
+                    <a href="#portfolioModal1" class="cd-read-more" data-toggle="modal">查看更多</a>
+                    <span class="cd-date">2016-10-16</span>
+                </div> <!-- cd-timeline-content -->
+            </div> <!-- cd-timeline-block -->
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-location">
+                    
+                </div> <!-- cd-timeline-img -->
+                <div class="cd-timeline-content maintext">
+                    <h3>南京软件博览会</h3>
+                    <p>萝卜特甜参加南京软件博览会，现场展示VR+房产概念，观众现场体验虚拟现实的魅力......</p>
+                    <a href="#portfolioModal6" class="cd-read-more" data-toggle="modal">查看更多</a>
+                    <span class="cd-date">2016-09-03 </span>
+                </div> <!-- cd-timeline-content -->
+            </div> <!-- cd-timeline-block -->
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-movie">
+                    
+                </div> <!-- cd-timeline-img -->
+                <div class="cd-timeline-content maintext">
+                    <h3>正太周山汇水项目</h3>
+                    <p>为了全面展示周山汇水的新品楼盘，周山汇水在寻找新技术的过程中，最终选择和萝卜特甜展开合作，开发了VR2.0漫游系统，公司已最新的科技，将样板间最真实的还原出来......</p>
+                    <a href="#portfolioModal5" class="cd-read-more" data-toggle="modal">查看更多</a>
+                    <span class="cd-date">2016-08-06</span>
+                </div> <!-- cd-timeline-content -->
+            </div> <!-- cd-timeline-block -->
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture">
+                    
+                </div> <!-- cd-timeline-img -->
+                <div class="cd-timeline-content maintext">
+                    <h3>碧桂园翡翠华府项目</h3>
+                    <p>2016年公司已经实现营收，销售额逐日攀升，与碧桂园旗下的多个楼盘达成了长期合作合同。其中包括碧桂园城市花园、碧桂园翡翠华府、碧桂园仙林云墅......</p>
+                    <a href="#portfolioModal4" class="cd-read-more" data-toggle="modal">查看更多</a>
+                    <span class="cd-date">2016-05-08</span>
+                </div> <!-- cd-timeline-content -->
+            </div> <!-- cd-timeline-block -->
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-movie">
+                    
+                </div> <!-- cd-timeline-img -->
+                <div class="cd-timeline-content maintext">
+                    <h3>特甜VR诞生</h3>
+                    <p>特甜VR品牌诞生，专业服务VR+地产，可以满足从场景设计、3D建模到VR场景设计开发，再到最终的部署培训等全部技术需求。</p>
+                    <span class="cd-date">2016-02-01</span>
+                </div> <!-- cd-timeline-content -->
+            </div> <!-- cd-timeline-block -->
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-location">
+                    
+                </div> <!-- cd-timeline-img -->
+                <div class="cd-timeline-content maintext">
+                    <h3>2015南京国际马拉松</h3>
+                    <p>
+                        萝卜特甜作为一个有责任的社会型公司，热衷于助力南京的体育事业发展。与南京国际马拉松主委会达成战略合作，成为其唯一的全景资源提供商，为南京国际马拉松制作了马拉松全程风景的全景视频......</p>
+                    <a href="#portfolioModal3" class="cd-read-more" data-toggle="modal">查看更多</a>
+                    <span class="cd-date">2015-11-29</span>
+                </div> <!-- cd-timeline-content -->
+            </div> <!-- cd-timeline-block -->
+
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture">
+                    
+                </div> <!-- cd-timeline-img -->
+                <div class="cd-timeline-content maintext">
+                    <h3>玄武湖路演</h3>
+                    <p>当时的VR圈刚刚起步，一切得自己脚踏实地的去探索。经过几个月的埋头苦干，公司开发出了第一套手机VR APP,自主开发出了全景拍摄的一次成像设备，还有初代VR
+                        头盔，打通了从制作到展示的一整套技术难关......</p>
+                    <a href="#portfolioModal2" class="cd-read-more" data-toggle="modal">查看更多</a>
+                    <span class="cd-date">2015-10-02</span>
+                </div> <!-- cd-timeline-content -->
+            </div> <!-- cd-timeline-block -->
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-location">
+                    
+                </div> <!-- cd-timeline-img -->
+                <div class="cd-timeline-content maintext">
+                    <h3>全视界全景诞生</h3>
+                    <p>全视界全景品牌诞生，服务房产，婚庆，旅游，具备专业的全景VR拍摄技术，真实还原各类场景，快速互联网传播。涵盖照片和视频的拍摄，全景VR直播服务。</p>
+                    <span class="cd-date">2015-09-01 </span>
+                </div> <!-- cd-timeline-content -->
+            </div> <!-- cd-timeline-block -->
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-movie">
+                    
+                </div> <!-- cd-timeline-img -->
+                <div class="cd-timeline-content maintext">
+                    <h3>萝卜特甜创立</h3>
+                    <p>
+                        一群年轻人怀揣着自己的激情和理想，在南京玄武湖畔蓝湾咖啡厅商讨创立了萝卜特甜品牌，公司办公地位于玄武湖旁居民区内。小伙子开始前期产品设计，技术攻关。意在以自己的力量为全乃至世界的各个公司以最小的服务成本创造最美好的社会价值。</p>
+                    <span class="cd-date">2015-05-08</span>
+                </div> <!-- cd-timeline-content -->
+            </div> <!-- cd-timeline-block -->
+        </div>
+    </div>
+</section> <!-- cd-timeline -->
+<!-- paterner -->
+<section id="section-paterner" class="appear section appear" data-stellar-background-ratio="0.4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 pad-top40 pad-bot40">
+                <img src="img/t5.png"
+                     class="img-responsive center-block notransition animated fadeInUpNow animation103">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 align-center notransition animated fadeInDownNow animation103">
+                <p class="section-header">合作伙伴</p>
+            </div>
+        </div>
+        <div class="row align-center">
+            <div class="col-md-3 col-xs-6 notransition animated fadeInUpNow animation53">
+                <a class="btn paterner-btn btn-modal"
+                   style="background: url(img/biguiyuan.jpg) no-repeat center center/contain;"></a>
+            </div>
+            <div class="col-md-3 col-xs-6 notransition animated fadeInUpNow animation56">
+                <a class="btn paterner-btn btn-modal"
+                   style="background: url(img/henda.jpg) no-repeat center center/contain;"></a>
+            </div>
+            <div class="col-md-3 col-xs-6 notransition animated fadeInUpNow animation59">
+                <a class="btn paterner-btn btn-modal"
+                   style="background: url(img/jinglun.jpg) no-repeat center center/contain;"></a>
+            </div>
+            <div class="col-md-3 col-xs-6 notransition animated fadeInUpNow animation512">
+                <a class="btn paterner-btn btn-modal"
+                   style="background: url(img/wanda.jpg) no-repeat center center/contain;"></a>
+            </div>
+        </div>
+        <div class="row paterner2 align-center">
+            <div class="col-md-3 col-xs-6 notransition animated fadeInUpNow animation53">
+                <a class="btn paterner-btn btn-modal"
+                   style="background: url(img/gcdt.jpg) no-repeat center center/contain;"></a>
+            </div>
+            <div class="col-md-3 col-xs-6 notransition animated fadeInUpNow animation56">
+                <a class="btn paterner-btn btn-modal"
+                   style="background: url(img/zt.jpg) no-repeat center center/contain;"></a>
+            </div>
+            <div class="col-md-3 col-xs-6 notransition animated fadeInUpNow animation59">
+                <a class="btn paterner-btn btn-modal"
+                   style="background: url(img/gc.jpg) no-repeat center center/contain;"></a>
+            </div>
+            <div class="col-md-3 col-xs-6 notransition animated fadeInUpNow animation512">
+                <a class="btn paterner-btn btn-modal"
+                   style="background: url(img/wawj.jpg) no-repeat center center/contain;"></a>
+            </div>
+        </div>
+        <div class="row align-center">
+            <div class="col-md-3 col-xs-6 notransition animated fadeInUpNow animation53">
+                <a class="btn paterner-btn btn-modal"
+                   style="background: url(img/njmls.jpg) no-repeat center center/contain;"></a>
+            </div>
+            <div class="col-md-3 col-xs-6 notransition animated fadeInUpNow animation56">
+                <a class="btn paterner-btn btn-modal"
+                   style="background: url(img/hylh.png) no-repeat center center/contain;"></a>
+            </div>
+            <div class="col-md-3 col-xs-6 notransition animated fadeInUpNow animation59">
+                <a class="btn paterner-btn btn-modal"
+                   style="background: url(img/gcdt.jpg) no-repeat center center/contain;"></a>
+            </div>
+            <div class="col-md-3 col-xs-6 notransition animated fadeInUpNow animation512">
+                <a class="btn paterner-btn btn-modal"
+                   style="background: url(img/hsl.png) no-repeat center center/contain;"></a>
+            </div>
+        </div>
+        <div class="row paterner3 align-center">
+            <div class="col-md-3 col-xs-6 notransition animated fadeInUpNow animation53">
+                <a class="btn paterner-btn btn-modal"
+                   style="background: url(img/vive.jpg) no-repeat center center/contain;"></a>
+            </div>
+            <div class="col-md-3 col-xs-6 notransition animated fadeInUpNow animation56">
+                <a class="btn paterner-btn btn-modal"
+                   style="background: url(img/unreal.jpg) no-repeat center center/contain;"></a>
+            </div>
+            <div class="col-md-3 col-xs-6 notransition animated fadeInUpNow animation59">
+                <a class="btn paterner-btn btn-modal"
+                   style="background: url(img/nibiru.jpg) no-repeat center center/contain;"></a>
+            </div>
+            <div class="col-md-3 col-xs-6 notransition animated fadeInUpNow animation512">
+                <a class="btn paterner-btn btn-modal"
+                   style="background: url(img/oculs.jpg) no-repeat center center/contain;"></a>
+            </div>
+        </div>
+        <div class="row align-center">
+            <div class="col-md-3 col-xs-6 notransition animated fadeInUpNow animation53">
+                <a class="btn paterner-btn btn-modal"
+                   style="background: url(img/insta.png) no-repeat center center/contain;"></a>
+            </div>
+            <div class="col-md-3 col-xs-6 notransition animated fadeInUpNow animation56">
+                <a class="btn paterner-btn btn-modal"
+                   style="background: url(img/dj.png) no-repeat center center/contain;"></a>
+            </div>
+            <div class="col-md-3 col-xs-6 notransition animated fadeInUpNow animation59">
+                <a class="btn paterner-btn btn-modal"
+                   style="background: url(img/theta.png) no-repeat center center/contain;"></a>
+            </div>
+            <div class="col-md-3 col-xs-6 notransition animated fadeInUpNow animation512">
+                <a class="btn paterner-btn btn-modal"
+                   style="background: url(img/gear.png) no-repeat center center/contain;"></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- footer-->
+<section id="footer" class="section footer ">
+    <div class="container pad-bot40">
+        <div class="row animated opacity mar-bot20" data-andown="fadeIn" data-animation="animation">
+            <div class="col-sm-12 align-center">
+                <ul class="social-network social-circle">
+                    <li><a href="https://shop129979655.taobao.com/" target="_blank" class="icotaobao" title="淘宝商城"
+                           data-toggle="tooltip" data-placement="bottom">
+                        <div style="line-height: 50px"><img src="img/taobao.png"></div>
+                    </a></li>
+                    <li><a tabindex="0" class="icoweixin" role="button" data-toggle="popover" data-trigger="hover"
+                           data-html="true" data-placement="bottom" data-content="<img src='img/qrlbtt.jpg'>"><i
+                            class="fa fa-weixin"></i></a></li>
+                    <li><a href="#" class="icovr" title="HTML5" data-toggle="tooltip" data-placement="bottom"><i
+                            class="fa fa-html5"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row align-center copyright">
+            <div class="col-sm-12">
+                <p>&copy;&nbsp;2016 南京萝卜特甜信息科技有限公司</p>
+                <p>
+                    <small><i class="fa fa-building-o"></i>&nbsp;&nbsp;南京市建邺区江东中路98号河西万达广场F座812室</small>
+                </p>
+                <h4><strong><a href="tel:025-66911667" target="_blank" style="letter-spacing: 6px;"><i class="fa fa-phone"></i>&nbsp;025-66911667</a></strong></h4>
+                <p>
+                    <small><a href="http://www.miitbeian.gov.cn/" target="_blank" class="color-footer"><i class="fa fa-shield"></i>&nbsp;&nbsp;苏ICP备15041839号</a></small>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- modal1 -->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body maintext">
+                            <h1>2016南京马拉松</h1>
+                            <p>时隔一年，萝卜特甜再次受邀助力2016南京马拉松，为本次赛事带来了全新的设备，赛前发布了领取比赛物品的全景指南，为运动员提供了方便的导航</p>
+                            <p><img class="img-responsive center-block" src="img/news_2016mls1.jpg">
+                            </p>
+                            <p>这次同样为每个运动员拍摄了冲刺时刻的全景照片，将他们的美好时刻通过全景照片的方式完整的记录下来。给每个参赛者留下了深刻的印象，圆满完成了预期任务。</p>
+                            <p><img class="img-responsive center-block" src="img/news_2016mls2.jpg">
+                            </p>
+                            <div class="align-right">
+                                <small>2016-10-16</small>
+                            </div>
+                            <div class="align-center">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i
+                                        class="fa fa-times"></i> 关闭
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal2 -->
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body maintext">
+                            <h1>玄武湖路演</h1>
+                            <p>当时的VR圈刚刚起步，一切得自己脚踏实地的去探索。经过几个月的埋头苦干，公司开发出了第一套手机VR APP,自主开发出了全景拍摄的一次成像设备，还有初代VR
+                                头盔，打通了从制作到展示的一整套技术难关。</p>
+                            <p><img class="img-responsive center-block" src="img/news_xwhly1.jpg">
+                            </p>
+                            <p>
+                                为了让大众也能感受到VR带来的震撼，团队装上APP，带上设备。来到了美丽的玄武湖让大众第一次接触到了公司的产品。给大众带来惊喜的同时，现场的火爆也证明自己的产品是得到消费者肯定的，进过一天的测试设备软件稳定的完成了任务。</p>
+                            <p><img class="img-responsive center-block" src="img/news_xwhly2.jpg">
+                            </p>
+                            <div class="align-right">
+                                <small>2015-10-02</small>
+                            </div>
+                            <div class="align-center">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i
+                                        class="fa fa-times"></i> 关闭
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal3 -->
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body maintext">
+                            <h1>2015南京国际马拉松</h1>
+                            <p>
+                                萝卜特甜作为一个有责任的社会型公司，热衷于助力南京的体育事业发展。与南京国际马拉松主委会达成战略合作，成为其唯一的全景资源提供商，为南京国际马拉松制作了马拉松全程风景的全景视频，让参赛者提前熟悉了整个赛道的状况，更向人们展示了美丽的南京风景。</p>
+                            <p><img class="img-responsive center-block" src="img/news_2015mls2.jpg">
+                            </p>
+                            <p><img class="img-responsive center-block" src="img/news_2015mls3.jpg">
+                            </p>
+                            <p>同时为每个运动员拍摄了冲刺时刻的全景照片，将他们的美好时刻通过全景照片的方式完整的记录下来。给每个参赛者留下了深刻的印象，圆满完成了预期任务。</p>
+                            <p><img class="img-responsive center-block" src="img/news_2015mls5.jpg">
+                            </p>
+                            <p><img class="img-responsive center-block" src="img/news_2015mls4.jpg">
+                            </p>
+                            <p>赛后得到了组委会的一致认可，为以后的长期合作的打下了坚实的基础。</p>
+                            <div class="align-right">
+                                <small>2015-11-29</small>
+                            </div>
+                            <div class="align-center">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i
+                                        class="fa fa-times"></i> 关闭
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal4 -->
+<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body maintext">
+                            <h1>翡翠华府城市展厅</h1>
+                            <p>2016年公司已经实现营收，销售额逐日攀升，与碧桂园旗下的多个楼盘达成了长期合作合同。其中包括碧桂园城市花园、碧桂园翡翠华府、碧桂园仙林云墅等楼盘（详细点击<a
+                                    href="index.html#section-case" target="_blank">特甜VR案例展示</a>）。</p>
+                            <p><img class="img-responsive center-block" src="img/news_fchf1.jpg">
+                            </p>
+                            <p>
+                                在碧桂园翡翠华府项目中，公司安排专门技术人员上门培训演示。在南京新街口的城市展厅，设置了VR样板间的看房区，吸引大量客户前来观看样板间，连60岁的老奶奶都赞口不绝。说能提前看到房子这趟来值了。这也给了我们充分的信心继续完善我们的产品，给消费者带来更多的好产品好体验。</p>
+                            <p><img class="img-responsive center-block" src="img/news_fchf2.jpg">
+                            </p>
+                            <p>
+                                经过一天的展示，碧桂园翡翠华府的楼盘日销售超出了预期的目标。当天又相继签订了VR1.0的多个户型订单，这次的订单我们创新的将游戏和全景融合在一起，让潜在客户在游戏的过程中就可以感受到翡翠华府的智能家居概念（详情点击<a
+                                    href="http://www.qsjqj.com/server/feicuihuafu/fchfxb.html" target="_blank">碧桂园翡翠华府样板间寻宝之旅</a>）。最终得到了碧桂园的一致肯定。
+                            </p>
+                            <p><img class="img-responsive center-block" src="img/news_fchf3.jpg">
+                            </p>
+                            <div class="align-right">
+                                <small>2016-05-08</small>
+                            </div>
+                            <div class="align-center">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i
+                                        class="fa fa-times"></i> 关闭
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal5 -->
+<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body maintext">
+                            <h1>正太周山汇水项目</h1>
+                            <p>周山汇水项目位于泰州市中轴线海陵路重要位置。项目总占地约341亩，总建筑面积约50万方。容积率为2.2，总规划户数2500户左右。</p>
+                            <p><img class="img-responsive center-block" src="img/news_zshs1.jpg">
+                            </p>
+                            <p>
+                                为了全面展示周山汇水的新品楼盘，周山汇水在寻找新技术的过程中，最终选择和萝卜特甜展开合作，开发了VR2.0漫游系统，公司已最新的科技，将样板间最真实的还原出来。</p>
+                            <p><img class="img-responsive center-block" src="img/news_zshs2.jpg">
+                            </p>
+                            <p>
+                                萝卜特甜受邀泰州正太周山汇水领秀新品发布会，公司高总在发布会台上发言介绍了最新的VR2.0产品，与消费者现场互动了最新的VR技术。
+                            </p>
+                            <p><img class="img-responsive center-block" src="img/news_zshs3.jpg">
+                            </p>
+                            <p>
+                                现场来参观虚拟样板间的消费者络绎不绝，体验后对样板间的效果感到满意。对房屋的户型、高度、昼夜的采光也有最直观最真实的体验。
+                            </p>
+                            <p><img class="img-responsive center-block" src="img/news_zshs4.jpg">
+                            </p>
+                            <div class="align-right">
+                                <small>2016-08-06</small>
+                            </div>
+                            <div class="align-center">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i
+                                        class="fa fa-times"></i> 关闭
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal6 -->
+<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body maintext">
+                            <h1>南京软件博览会</h1>
+                            <p>萝卜特甜参加南京软件博览会，现场展示VR+房产概念，观众现场体验虚拟现实的魅力。</p>
+                            <p><img class="img-responsive center-block" src="img/news_njrbh.jpg">
+                            </p>
+                            <p>
+                                现场一位印度客户在体验完虚拟看房后惊呼不可思议，对我们的科技惊叹不已。</p>
+                            <p><img class="img-responsive center-block" src="img/news_njrbh1.jpg">
+                            </p>
+                            <div class="align-right">
+                                <small>2016-09-03</small>
+                            </div>
+                            <div class="align-center">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i
+                                        class="fa fa-times"></i> 关闭
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal7 -->
+<div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body maintext">
+                            <h1>第四届江苏国际绿色建筑展览会</h1>
+                            <p>萝卜特甜参加了在南京国际博览中心举行的第四届江苏国际绿色建筑展览会，全面展示了旗下子品牌——特甜VR的虚拟样板间产品，吸引了大批参观者的目光。</p>
+                            <p><img class="img-responsive center-block" src="img/news_lsjz2.jpg">
+                            </p>
+                            <p>这次展会我们完美的将虚拟样板间与绿色建筑的主题相结合，采用虚拟样板间的形式展示样板间，不仅节约了成本同时也符合现代绿色低碳的设计理念。</p>
+                            <p><img class="img-responsive center-block" src="img/news_lsjz1.jpg">
+                            </p>
+                            <p>不仅省委领导亲临参观，还包括中科院院士亲自体验了一把虚拟样板间，并给予了高度评价。</p>
+                            <p><img class="img-responsive center-block" src="img/news_lsjz3.jpg">
+                            </p>
+                            <p>图为主办方过来一探虚拟样板间的奥秘。</p>
+                            <p><img class="img-responsive center-block" src="img/news_lsjz4.jpg">
+                            </p>
+                            <div class="align-right">
+                                <small>2016-11-03</small>
+                            </div>
+                            <div class="align-center">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i
+                                        class="fa fa-times"></i> 关闭
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/skrollr.min.js"></script>
+<script src="js/stellar.js"></script>
+<script src="js/jquery.appear.js"></script>
+<script src="js/jweixin-1.0.0.js"></script>
+<script src="js/main.js"></script>
+<script>
+    if (!Modernizr.mq('only all and (max-width: 1024px)')) {
+        "use strict";
+
+        var canvas = document.getElementById('canvas'),
+                ctx = canvas.getContext('2d'),
+                w = canvas.width = window.innerWidth,
+                h = canvas.height = 700,
+
+                hue = 217,
+                stars = [],
+                count = 0,
+                maxStars = 1200;
+
+        var canvas2 = document.createElement('canvas'),
+                ctx2 = canvas2.getContext('2d');
+        canvas2.width = 100;
+        canvas2.height = 100;
+        var half = canvas2.width / 2,
+                gradient2 = ctx2.createRadialGradient(half, half, 0, half, half, half);
+        gradient2.addColorStop(0.025, '#fff');
+        gradient2.addColorStop(0.1, 'hsl(' + hue + ', 61%, 33%)');
+        gradient2.addColorStop(0.25, 'hsl(' + hue + ', 64%, 6%)');
+        gradient2.addColorStop(1, 'transparent');
+
+        ctx2.fillStyle = gradient2;
+        ctx2.beginPath();
+        ctx2.arc(half, half, half, 0, Math.PI * 2);
+        ctx2.fill();
+
+        // End cache
+
+        function random(min, max) {
+            if (arguments.length < 2) {
+                max = min;
+                min = 0;
+            }
+
+            if (min > max) {
+                var hold = max;
+                max = min;
+                min = hold;
+            }
+
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        function maxOrbit(x, y) {
+            var max = Math.max(x, y),
+                    diameter = Math.round(Math.sqrt(max * max + max * max));
+            return diameter / 2;
+        }
+
+        var Star = function () {
+
+            this.orbitRadius = random(maxOrbit(w, h));
+            this.radius = random(60, this.orbitRadius) / 12;
+            this.orbitX = w / 2;
+            this.orbitY = h / 2;
+            this.timePassed = random(0, maxStars);
+            this.speed = random(this.orbitRadius) / 900000;
+            this.alpha = random(2, 10) / 10;
+
+            count++;
+            stars[count] = this;
+        };
+
+        Star.prototype.draw = function () {
+            var x = Math.sin(this.timePassed) * this.orbitRadius + this.orbitX,
+                    y = Math.cos(this.timePassed) * this.orbitRadius + this.orbitY,
+                    twinkle = random(10);
+
+            if (twinkle === 1 && this.alpha > 0) {
+                this.alpha -= 0.05;
+            } else if (twinkle === 2 && this.alpha < 1) {
+                this.alpha += 0.05;
+            }
+
+            ctx.globalAlpha = this.alpha;
+            ctx.drawImage(canvas2, x - this.radius / 2, y - this.radius / 2, this.radius, this.radius);
+            this.timePassed += this.speed;
+        };
+
+        for (var i = 0; i < maxStars; i++) {
+            new Star();
+        }
+
+        function animation() {
+            ctx.globalCompositeOperation = 'source-over';
+            ctx.globalAlpha = 0.8;
+            ctx.fillStyle = 'hsla(' + hue + ', 64%, 6%, 1)';
+            ctx.fillRect(0, 0, w, h);
+
+            ctx.globalCompositeOperation = 'lighter';
+            for (var i = 1, l = stars.length; i < l; i++) {
+                stars[i].draw();
+            }
+
+            window.requestAnimationFrame(animation);
+        }
+
+        animation();
+    }
+</script>
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?b97983f375a0aaf713b0ec5ca6cc97d0";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+</body>
+</html>
